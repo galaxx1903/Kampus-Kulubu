@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Etkinlikler | Kampüs Oyun Topluluğu</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 <header><div class="brand">Kampüs Oyun Topluluğu</div><nav aria-label="Ana menü"><a href="index.html">Ana Sayfa</a>
@@ -12,7 +13,16 @@
 <a href="hakkimizda.html">Hakkımızda</a></nav></header>
 <main><p class="eyebrow">KAMPÜS OYUN TOPLULUĞU</p><h1>Oyun takvimi</h1>
 <p class="intro">Birlikte oynamak, üretmek ve yeni oyunlar keşfetmek için yaklaşan buluşmalarımıza göz at.</p>
-<section class="grid" aria-label="Oyun topluluğu etkinlikleri">
+<div class="event-search">
+<label for="event-search-input">Etkinlik başlığına göre ara</label>
+<div class="event-search-controls">
+<input id="event-search-input" type="search" autocomplete="off">
+<button id="clear-search" type="button">Temizle</button>
+</div>
+<p id="event-count" class="event-count" aria-live="polite">5 etkinlik gösteriliyor.</p>
+<p id="no-events" class="event-empty" role="status" hidden>Aramanıza uygun etkinlik bulunamadı.</p>
+</div>
+<section class="grid" id="event-list" aria-label="Oyun topluluğu etkinlikleri">
 <article><p class="meta">12 KASIM / 14.00</p><h2>Konsol ve Masaüstü Buluşması</h2><p>Farklı oyun türlerini dene, arkadaşlarınla eşleş ve yeni oyun önerileri keşfet.</p><p>Yer: Öğrenci Merkezi, Oyun Salonu</p></article>
 <article><p class="meta">19 KASIM / 14.00</p><h2>Mini Oyun Geliştirme Jam'i</h2><p>Küçük ekipler kurup belirlenen tema etrafında kısa sürede oynanabilir bir fikir üret.</p><p>Yer: Bilgisayar Laboratuvarı</p></article>
 <article><p class="meta">26 KASIM / 14.00</p><h2>Kampüs E-spor Takım Günü</h2><p>Dostluk maçlarına katıl, takım oyunu taktiklerini dene ve kampüs takımlarıyla tanış.</p><p>Yer: Çok Amaçlı Salon</p></article>

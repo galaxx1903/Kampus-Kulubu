@@ -16,7 +16,17 @@ h1 { font-size: clamp(34px, 5vw, 60px); line-height: 1.12; max-width: 850px; mar
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 32px; }
 article { background: white; border-top: 4px solid #087d70; padding: 25px; border-radius: 6px; }
 article h2 { margin: 10px 0; font-size: 23px; }
+.event-search { max-width: 680px; margin-top: 28px; }
+.event-search label { display: block; margin-bottom: 8px; font-weight: bold; }
+.event-search-controls { display: flex; gap: 10px; }
+.event-search input { flex: 1; min-width: 0; padding: 12px 14px; border: 1px solid #9fb2bf; border-radius: 6px; background: white; color: #183044; font: inherit; }
+.event-search button { padding: 12px 18px; border: 0; border-radius: 6px; background: #087d70; color: white; font: inherit; font-weight: bold; cursor: pointer; }
+.event-search input:focus-visible, .event-search button:focus-visible { outline: 3px solid #e1a82b; outline-offset: 3px; }
+.event-search button:hover { background: #065e56; }
+.event-count { margin: 12px 0 0; color: #496272; }
+.event-empty { margin: 8px 0 0; color: #496272; font-weight: bold; }
 .meta { font-size: 14px; color: #087d70; font-weight: bold; }
 .note { padding: 18px 22px; border-left: 4px solid #db9d27; background: #fff4d8; margin-top: 30px; }
 footer { border-top: 1px solid #cad8e0; padding: 24px 6vw; color: #496272; font-size: 14px; }
 @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } main { padding-top: 28px; } }
+@media (max-width: 390px) { .event-search-controls { flex-direction: column; } .event-search input, .event-search button { width: 100%; } }
