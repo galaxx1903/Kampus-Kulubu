@@ -19,4 +19,4 @@ python3 -m http.server 8000
 
 Ek paket veya framework kurulumu gerekmez.
 
-Repository: [https://github.com/galaxx1903/Kampus-Kulubu]
+Repository: https://github.com/galaxx1903/Kampus-Kulubu
